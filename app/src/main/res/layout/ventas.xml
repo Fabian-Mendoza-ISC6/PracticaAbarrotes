@@ -84,6 +84,7 @@
                     android:backgroundTint="@color/black"
                     android:minHeight="0dp"
                     android:minWidth="0dp"
+                    android:onClick="buscarCodigo"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="8dp"
                     android:text="Buscar"
@@ -221,6 +222,7 @@
                     android:backgroundTint="@color/black"
                     android:minHeight="0dp"
                     android:minWidth="0dp"
+                    android:onClick="calcularSubtotal"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="8dp"
                     android:text="Calcular"
@@ -279,6 +281,7 @@
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/black"
             android:text="Agregar Producto"
+            android:onClick="agregarProducto"
             android:textColor="@color/white"
             android:textStyle="bold"
             app:cornerRadius="25dp" />
@@ -297,6 +300,7 @@
                 android:layout_marginEnd="5dp"
                 android:backgroundTint="@color/black"
                 android:text="Finalizar"
+                android:onClick="finalizarVenta"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:cornerRadius="25dp" />
