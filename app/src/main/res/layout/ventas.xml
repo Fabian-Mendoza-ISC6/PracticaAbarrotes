@@ -7,7 +7,7 @@
     android:background="@drawable/ventass"
     android:padding="16dp">
 
-    <!-- Título superior -->
+    <!-- Título superior con Logo -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardTitulo"
         android:layout_width="wrap_content"
@@ -19,17 +19,31 @@
         app:cardElevation="6dp"
         app:strokeWidth="0dp">
 
-        <TextView
-            android:id="@+id/lbl_Titulo"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:paddingHorizontal="40dp"
-            android:paddingVertical="12dp"
-            android:text="Ventas"
-            android:textColor="@color/black"
-            android:textSize="26sp"
-            android:textStyle="bold" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/lbl_Titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Ventas"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <!-- Contenedor con Scroll -->

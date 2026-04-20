@@ -25,6 +25,7 @@ public class Productos extends AppCompatActivity {
         Existencia = findViewById(R.id.txtCantidad);
         Precio = findViewById(R.id.txtPrecio);
 
+
         Button btnVentas = findViewById(R.id.btnVentas);
         btnVentas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,8 @@ public class Productos extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 
     private void limpiar() {

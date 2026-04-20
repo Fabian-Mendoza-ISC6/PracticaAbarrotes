@@ -7,7 +7,7 @@
     android:background="@drawable/prod"
     android:padding="16dp">
 
-    <!-- Título superior -->
+    <!-- Título superior con Logo al lado -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardTitulo"
         android:layout_width="wrap_content"
@@ -19,17 +19,31 @@
         app:cardElevation="6dp"
         app:strokeWidth="0dp">
 
-        <TextView
-            android:id="@+id/lbl_Titulo"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:paddingHorizontal="40dp"
-            android:paddingVertical="12dp"
-            android:text="Registro de Productos"
-            android:textColor="@color/black"
-            android:textSize="26sp"
-            android:textStyle="bold" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/img_study"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/lbl_Titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Registro de Productos"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <!-- Contenedor con Scroll -->
@@ -227,10 +241,10 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:onClick="guardarProducto"
                 android:layout_marginEnd="4dp"
                 android:backgroundTint="@color/black"
                 android:text="Guardar"
+                android:onClick="guardarProducto"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -241,10 +255,10 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:onClick="buscarProducto"
                 android:layout_marginStart="4dp"
                 android:backgroundTint="@color/black"
                 android:text="Consultar"
+                android:onClick="buscarProducto"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -264,10 +278,10 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:onClick="eliminarProducto"
                 android:layout_marginEnd="4dp"
                 android:backgroundTint="@color/black"
                 android:text="Eliminar"
+                android:onClick="eliminarProducto"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -278,10 +292,10 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:onClick="editarProducto"
                 android:layout_marginStart="4dp"
                 android:backgroundTint="@color/black"
                 android:text="Modificar"
+                android:onClick="editarProducto"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 android:textStyle="bold"
