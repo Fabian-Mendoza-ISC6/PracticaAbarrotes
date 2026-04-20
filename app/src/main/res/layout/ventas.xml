@@ -106,6 +106,7 @@
                     app:cornerRadius="15dp" />
             </LinearLayout>
 
+
             <!-- Fila: Nombre -->
             <LinearLayout
                 android:layout_width="match_parent"
